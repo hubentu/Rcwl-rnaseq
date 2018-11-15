@@ -34,8 +34,7 @@ RUN cd /usr/local/bin && \
     chmod +x gtfToGenePred genePredToBed
 
 # featureCount
-RUN cd /opt && wget https://downloads.sourceforge.net/project/subread/subread-1.6.3/subread-1.6.3-source.tar.gz && \
-    tar xvf subread-1.6.3-source.tar.gz && cd /opt/subread-1.6.3-source/src && \
-    make -f Makefile.Linux -j && \
-    ln -s /opt/subread-1.6.3-source/bin/* /usr/local/bin && \
-    rm /opt/subread-1.6.3-source.tar.gz
+RUN cd /opt && wget https://downloads.sourceforge.net/project/subread/subread-1.6.3/subread-1.6.3-Linux-x86_64.tar.gz && \
+    tar xvf subread-1.6.3-Linux-x86_64.tar.gz && \
+    ln -s /opt/subread-1.6.3-Linux-x86_64/bin/* /usr/local/bin/ && \
+    rm /opt/subread-1.6.3-Linux-x86_64.tar.gz
