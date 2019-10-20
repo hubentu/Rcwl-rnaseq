@@ -20,9 +20,9 @@ RUN cd /opt && wget https://www.bioinformatics.babraham.ac.uk/projects/fastqc/fa
     rm /opt/fastqc_v0.11.8.zip
 
 # STAR
-RUN wget https://github.com/alexdobin/STAR/archive/2.6.1c.tar.gz && tar xvf 2.6.1c.tar.gz && \
-    ln -s /opt/STAR-2.6.1c/bin/Linux_x86_64/STAR* /usr/local/bin/ && \
-    rm /opt/2.6.1c.tar.gz
+RUN wget https://github.com/alexdobin/STAR/archive/2.7.3a.tar.gz && tar xvf 2.7.3a.tar.gz && \
+    ln -s /opt/STAR-2.7.3a/bin/Linux_x86_64/STAR* /usr/local/bin/ && \
+    rm /opt/2.7.3a.tar.gz
 
 # RSeQC
 RUN pip install numpy pysam && pip install RSeQC
