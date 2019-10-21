@@ -1,7 +1,7 @@
 FROM ubuntu
 
 RUN apt-get update
-RUN apt-get install -y g++ libbz2-dev liblzma-dev libncurses5-dev make python python-pip python-dev wget zlib1g-dev unzip default-jre
+RUN apt-get install -y g++ libbz2-dev liblzma-dev libncurses5-dev make python python-pip python-dev wget zlib1g-dev unzip default-jre r-base
 RUN apt-get clean
 
 WORKDIR /opt
